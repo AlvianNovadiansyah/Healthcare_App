@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputprofilActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Person Detail"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="16dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your Name"
+            android:maxLines="1"
+            android:textSize="14sp"
+            tools:ignore="VisualLintTextFieldSize"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="16dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ageET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your Age"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Gender"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="0dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginVertical="5dp"
+            android:text="Male"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginVertical="5dp"
+            android:text="Female"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginVertical="5dp"
+            android:text="Other"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/blue"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>
